@@ -1,0 +1,349 @@
+
+
+body{
+    background-color: #F4E869;
+    padding: 0%;
+    margin: 0%;
+ 
+}
+#firstdiv{
+    background-color: black;
+    height: 5%;
+    width: 990pt;
+    margin-bottom: 40pt;
+   padding-top: 0;
+   display: flex;
+}
+#logo{
+    margin-left:2%;
+    margin-top: 8px;
+    margin-right: 5px;
+    margin-bottom: 1%;
+    height: 50px;
+    width: 35px;
+    border-radius: 50%;
+    border: white solid 3px;
+}
+h1{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin:0 0;
+    margin-top: 10px;
+    margin-left: 4px;
+    margin-right: 150px;
+    font-size: 40px;
+    
+}
+.a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight:bolder;
+    margin-top: 22px;
+    margin-left: 82px;
+    margin-right: 0;
+    font-size: 25px;
+    cursor: pointer;
+}
+.a:hover{
+    color: #ff7200;
+}
+#get{
+    font-family: 'Caveat', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-weight: bolder;
+    position: absolute;
+    top: 4pt;
+    left: 994pt;
+    font-size: 22px;
+    border: 8px black solid;
+    border-radius: 30px;
+    padding: 8px;
+    cursor: pointer;
+
+}
+#get:hover{
+    color: white;
+}
+#target{
+    background: #ff7200;
+    height: 100%;
+    width: 12%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.8s;
+}
+#get:hover #target{
+    width: 100%;
+}
+.left{
+    margin-left: 40pt;
+    margin-top: 60pt;
+}
+.box{
+    background-color: white;
+    height: 400pt;
+    width: 450pt;
+    border-radius: 10%;
+    padding: 10px;
+    margin-bottom: 130px;
+}
+
+#quote{
+    color: black;
+   text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#epic{
+    color: #ff7200;
+}
+#search-bar{
+    display: flex;
+    margin: 0%;
+    margin-top: 20pt;
+    margin-left: 25pt;
+    background-color: whitesmoke;
+    height: 48px;
+    width: 400pt;
+    border: 3px solid black;
+    border-radius: 80px;
+    padding-bottom: 6px;
+    cursor: pointer;
+    margin-bottom: 20pt;
+}
+
+#search-icon{
+    display: flex;
+    height: 32pt;
+    width: 30pt;
+    padding-top: 6pt;
+    margin-left: 14pt;
+    margin-bottom: 0;
+}
+#search{
+    display: flex;
+    margin: 0;
+   margin-top: 8px;
+   margin-left: 10pt;
+    font-weight: 100;
+    margin-bottom: 0;
+    list-style: none;
+   padding: 0;
+   overflow: hidden;
+   
+}
+#search>a>li{
+    color: black;
+}
+#search li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    position: relative;
+    margin-bottom: 0;
+    top: 0;
+    padding: 0 5px;
+   animation: slide 13.6s steps(4) infinite;
+}
+@keyframes slide{
+    100%{
+        top:-156px;
+    }
+}
+#search li span{
+    position: relative;
+}
+#search li span::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    width: 250px;
+    height: 35.5px;
+    padding: 0px;
+   background:whitesmoke;
+    border-left: 4px solid black;
+    animation: typing 1.5s steps(12) infinite alternate;
+}
+@keyframes typing{
+    100%{
+        left:100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 28px 28px;
+    gap: 65px;
+    
+}
+.company{
+    width: 240px;
+    height: 72px;
+}
+#rightbox{
+    position: absolute;
+    top: 130pt;
+    left: 530pt;
+
+}
+.stocks{
+    height: 260px;
+    width: 540px;
+    border-radius: 20px;
+}
+#stock2{
+    position: absolute;
+    left: 210px;
+    top: 190px;
+}
+#white{
+    height: 620pt;
+    width: 100%;
+}
+#white>img{
+    height: 620pt;
+    width: 100%;
+}
+#form{
+    background-color: black;
+    width: 33%;
+    height: 500pt;
+    position: absolute;
+    top: 680pt;
+    left: 380pt;
+    border-radius: 20px;
+}
+#form h2{
+    text-align: center;
+    font-size: 50px;
+   font-family: sans-serif;
+   margin-top: 26px;
+   margin-bottom: 20px;
+   border-radius: 10px;
+   color: #ff7200;
+   background-color: black;
+   letter-spacing: 3px;
+}
+input:focus{
+    outline: none;
+}
+#pass,#email{
+    font-size: 20px;
+    margin-left: 15%;
+    margin-top: 30px;
+    width: 70%;
+    border: none;
+    letter-spacing: 4px;
+    border-bottom:6px solid #ff7200 ;
+    background-color: black;
+    color: white;
+}
+::placeholder{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+#check{
+    margin-top: 40px;
+    height: 15px;
+    width: 15px;
+    margin-left: 15%;
+    margin-right: 5px;
+}
+label{
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 140px;
+    margin-right: 60px;
+
+}
+a{
+    text-decoration: none;
+}
+#form>a{
+color: white;
+font-size: 16px;
+font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    height: 50px;
+    width: 70%;
+    background-color: #ff7200;
+    font-size: 20px;
+    margin-top:40px ;
+    margin-left: 15%;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    transition: 0.8;
+    border: 0px;
+}
+button>a{
+    color: white;
+}
+button:hover{
+    background: #ff7200;
+    box-shadow: 0 0 10px #ff7200, 0 0 40px #ff7200, 0 0 80px #ff7200, 0 0 100px #ff7200;
+    transition-delay: 0.2s;
+}
+#line{
+    height: 4px;
+    background-color: white;
+    margin: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 12%;
+    width: 285pt;
+}
+#form p{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-left: 15%;
+}
+#form p>a{
+    color: #ff7200;
+}
+h4{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 40%;
+    margin-top: 40px;
+}
+#last{
+    height: 100px;
+    width: 50%;
+    margin-left: 33%;
+}
+.liw{
+    height: 57%;
+    width: 21%;
+    margin-left: 9%;
+    cursor: pointer;
+}
+footer{
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+}
+footer>p{
+    background-color: black;
+    margin:0%;
+    font-family: Arial, Helvetica, sans-serif;
+    width: auto;
+    text-align: center;
+    padding: 1.5%;
+}
